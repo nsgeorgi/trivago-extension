@@ -1,4 +1,7 @@
-## Developing Google Chrome Extensions Source Code
+## Developing Google Chrome Extension for Trivago company.
 
-Here's the source code for the Nettuts+ article on Developing Google Chrome 
-Extensions, written by Krasimir Tsonev.
+This extension  allows you to hack trivago content so your modified version of trivago does the following:
+
+* The results list is modified to instead show a single hotel at a time (ie like a gallery)
+* The user can press left/right arrows to navigate between each hotel
+
