@@ -1,0 +1,35 @@
+{
+  "name": "Trivago SlideShow",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description" : "The results list of the hotels  is modified to instead show a single hotel at a time (SlideShow).
+   The user has the ability to  press left/right arrows to navigate between each hotel",
+  "icons": { "16": "icons/16x16.png", "48": "icons/48x48.png", "128": "icons/128x128.png" },
+
+  "omnibox": { "keyword" : "yeah" },
+
+ "browser_action": {
+    "default_icon": {
+        "19": "icons/19x19.png",
+        "38": "icons/38x38.png"
+    },
+    "default_title": "Trivago",
+    "default_popup": "browseraction/popup.html"
+},
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+ 
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "devtools_page": "devtools/devtools.html"
+}
